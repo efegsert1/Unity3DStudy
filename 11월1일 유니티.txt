@@ -1,0 +1,20 @@
+네비메시 (NaviMesh 아님 NavMesh임)
+게임 속에서 캐릭터가 "걸어다닐 수 있는 길" 을 표시함
+
+Agent Type
+이 NavMesh를 어떤 캐릭터가 사용할지
+
+Default Area
+기본적으로 이 표면이 어떤 종류의 길인지
+
+Generate Links
+점프나 경사로처럼 두 NavMesh 사이를 자동으로 연결할지
+
+Bake
+여기는 걸을 수 있음/ 여긴 벽임을 계산해서 NavMeshData를 만든다.
+AI가 이제는 구운 영역만 따라다닌다.
+
+적을 만들 때
+
+1. 플레이어를 추격해야하는 경우가 있다면
+NavMesh를 사용할 것!
