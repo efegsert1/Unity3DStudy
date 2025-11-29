@@ -26,14 +26,11 @@ public class PlayerShoot : MonoBehaviour
     public float throwForce = 15f;
     public float throwUpforce = 5f;
 
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         anim = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         Shoot();
@@ -68,7 +65,6 @@ public class PlayerShoot : MonoBehaviour
             //PlayOneShot 소리를 딱 한 번만 재생해!
             audioSource.PlayOneShot(clip);  // 겹쳐서 1회 재생
         }
-
     }
 
     //오른쪽 클릭을 떼면 루프사운드 중지
@@ -86,7 +82,6 @@ public class PlayerShoot : MonoBehaviour
                 audioSource.clip = null; //클립 참조 해제
                 audioSource.loop = false; //루프 재생 플레그 해제
             }
-
         }
     }
     
@@ -135,7 +130,6 @@ void Shoot()
 
         //SetBool vs SetTrigger
 
-
         //카메라 방향으로 광선 쏘기
         Ray ray = new Ray(playerCamera.position, playerCamera.forward);
         //레이 시작점 : 카메라 위치
@@ -171,6 +165,13 @@ void Shoot()
             //맞은 오브젝트에서 적 스크립트를 찾는다.
             FirstEnemyAi enemy = hit.collider.GetComponent<FirstEnemyAi>();
 
+            AIEnemy en = hit.collider.GetComponent<AIEnemy>();
+            if (en != null)
+            {
+                int damage = 10;
+                en.TakeDamage(damage, hit.point);
+            }
+
             if (enemy != null)
             {
                 int damage = 10; //한 번 맞을 때 줄 데미지 값, 원하는대로 조정
@@ -203,7 +204,7 @@ void Shoot()
                 // 이쪽으로 힘을 줘! 
                 forceDir.Normalize();
 
-                //피;격 지점에 힘을 가해 밀어냄
+                //피격 지점에 힘을 가해 밀어냄
                 //AddForceAtPosition : 특정 위치에 힘을 가한다
                 rb.AddForceAtPosition(forceDir * 1000f, hit.point);
             }
@@ -243,5 +244,3 @@ void Shoot()
         }
     }
 }
-
-

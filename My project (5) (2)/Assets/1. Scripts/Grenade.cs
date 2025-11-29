@@ -15,7 +15,6 @@ public class Grenade : MonoBehaviour
         //countdown = 3;
        countdown = delay; //게임이 시작하면 카운트다운을 설정
     }
-
     
     void Update()
     {
@@ -68,6 +67,12 @@ public class Grenade : MonoBehaviour
             {
                 //데미지를 입히기
                 enemy.TakeDamage(2147483647, transform.position);
+            }
+
+            AIEnemy enemy2 = nearby.GetComponentInChildren<AIEnemy>();
+            if (enemy2 != null)
+            {
+                enemy2.TakeDamage(2147483647, transform.position);
             }
 
             //물리 반응

@@ -19,6 +19,12 @@ public class PlayerHealth : MonoBehaviour
     private Color originalColor; //원래 색상 저장 변수
     public float flashDuration = 0.2f; //깜빡이는 시간
 
+    [Header("피격 화면 효과")]
+    //전체 화면 빨개지는 패널
+    public Image damagePanel;
+
+    //몇 초 뒤에 사라질지
+    public float damageFadeTime = 2f;
 
     void Start()
     {
@@ -40,14 +46,13 @@ public class PlayerHealth : MonoBehaviour
         if (playerRenderer != null)
         {
             //originalColor = 원래 플레이어의 색상을 넣어줌
-            originalColor = playerRenderer.material.color;  
+            originalColor = playerRenderer.material.color;
         }
-
     }
 
     void Update()
     {
-        
+
     }
 
     //플레이어의 체력이 깍인다.
@@ -62,18 +67,17 @@ public class PlayerHealth : MonoBehaviour
         currentHealth -= damage;
 
         //현재 체력이 0이하가 되었는지 확인다.
-        if(currentHealth <= 0)
+        if (currentHealth <= 0)
         {
             //체력이 음수가 되는것을 방지하기 위해 0으로 고정
             currentHealth = 0;
 
             Die(); //사망 처리 함수를 호출한다.
-
         }
 
         //체력 비율을 계산한다. 현재체력 / 최대 체력
         //예시 : 75 / 100  = 0.75
-        float healthPercent = (float) currentHealth /maxHealth;
+        float healthPercent = (float)currentHealth / maxHealth;
 
         //체력바가 UI에 연결되어 있다면, 계산한 비율을 체력바에 반영한다.
         //(3분)_17분
@@ -83,16 +87,19 @@ public class PlayerHealth : MonoBehaviour
         }
 
         //혹시라도 비율 계산 결과가 0이하일 경우, 사망 처리를 한 번 더 안전하게 수행
-        if(healthPercent <= 0)
-        { 
+        if (healthPercent <= 0)
+        {
             Die();
-           
+        }
 
+        //여기서 피격 색상 효과 실행
+        if(playerRenderer != null)
+        {
+            //코루틴 실행
+            StartCoroutine(DamageSreenFlash());
         }
 
         Debug.Log("플레이어가 데미지를 받음! 현재 체력 : " + currentHealth);
-
-
     }
 
     //사망 처리 함수
@@ -105,5 +112,32 @@ public class PlayerHealth : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-   
+    private System.Collections.IEnumerator DamageSreenFlash()
+    {
+        //빨간화면 이미지가 연결되어 있지 않다면
+        if (damagePanel == null)
+        {
+            yield break; //더 이상 아무것도 하지 않고 코루틴을 끝낸다
+        }
+
+        damagePanel.color = new Color(1, 0, 0, 0.4f);
+
+        //경과 시간을 재기 위한 변수
+        float el = 0f;
+        Color startColor = damagePanel.color;
+        //끝나는 색
+        Color encolor = new Color(1, 0, 0, 0f);
+
+        while (el < damageFadeTime)
+        {
+            el += Time.deltaTime;
+
+            damagePanel.color = Color.Lerp(startColor, encolor, el/damageFadeTime);
+
+            yield return null; //한 프레임 쉬고, 다음 프레임에서 while문이 실행되도록
+        }
+
+        //마지막에는 투명하게 되도록
+        damagePanel.color = encolor;
+    }
 }

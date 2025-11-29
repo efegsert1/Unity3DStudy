@@ -456,7 +456,6 @@ GameObject:
   - component: {fileID: 6124929647763297592}
   - component: {fileID: 5387617608656181591}
   - component: {fileID: 4664089202128775184}
-  - component: {fileID: 1367000787549040912}
   - component: {fileID: 3225302700125466711}
   - component: {fileID: 6166045823816066999}
   m_Layer: 0
@@ -536,19 +535,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.07380915, y: 0.09769434, z: 0.08326149}
   m_Center: {x: 0.30068707, y: -0.20115528, z: -0.36958408}
---- !u!114 &1367000787549040912
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7539998334659259713}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 305bdfe29591bae449c2b4a095680dda, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerMove
-  moveSpeed: 5
 --- !u!23 &3225302700125466711
 MeshRenderer:
   m_ObjectHideFlags: 0

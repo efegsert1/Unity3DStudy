@@ -1,25 +1,29 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Admin\\Downloads\\My project (5) (2)\\",
+  "WorkspaceRootPath": "C:\\d\\Unity3DStudy-main\\My project (5) (2)\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{579D70ED-A936-B8E6-31DC-205F56D5B772}|Assembly-CSharp.csproj|c:\\users\\admin\\downloads\\my project (5) (2)\\assets\\1. scripts\\spawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{579D70ED-A936-B8E6-31DC-205F56D5B772}|Assembly-CSharp.csproj|c:\\d\\unity3dstudy-main\\my project (5) (2)\\assets\\1. scripts\\spawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{579D70ED-A936-B8E6-31DC-205F56D5B772}|Assembly-CSharp.csproj|solutionrelative:assets\\1. scripts\\spawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{579D70ED-A936-B8E6-31DC-205F56D5B772}|Assembly-CSharp.csproj|c:\\users\\admin\\downloads\\my project (5) (2)\\assets\\1. scripts\\playermove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{579D70ED-A936-B8E6-31DC-205F56D5B772}|Assembly-CSharp.csproj|C:\\d\\Unity3DStudy-main\\My project (5) (2)\\assets\\1. scripts\\enemypool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{579D70ED-A936-B8E6-31DC-205F56D5B772}|Assembly-CSharp.csproj|solutionrelative:assets\\1. scripts\\enemypool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{579D70ED-A936-B8E6-31DC-205F56D5B772}|Assembly-CSharp.csproj|C:\\d\\Unity3DStudy-main\\My project (5) (2)\\assets\\1. scripts\\playermove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{579D70ED-A936-B8E6-31DC-205F56D5B772}|Assembly-CSharp.csproj|solutionrelative:assets\\1. scripts\\playermove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{579D70ED-A936-B8E6-31DC-205F56D5B772}|Assembly-CSharp.csproj|C:\\Users\\Admin\\Downloads\\My project (5) (2)\\assets\\1. scripts\\grenade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{579D70ED-A936-B8E6-31DC-205F56D5B772}|Assembly-CSharp.csproj|C:\\d\\Unity3DStudy-main\\My project (5) (2)\\assets\\1. scripts\\grenade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{579D70ED-A936-B8E6-31DC-205F56D5B772}|Assembly-CSharp.csproj|solutionrelative:assets\\1. scripts\\grenade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{579D70ED-A936-B8E6-31DC-205F56D5B772}|Assembly-CSharp.csproj|C:\\Users\\Admin\\Downloads\\My project (5) (2)\\assets\\1. scripts\\enemyscrpits\\firstenemyai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{579D70ED-A936-B8E6-31DC-205F56D5B772}|Assembly-CSharp.csproj|C:\\d\\Unity3DStudy-main\\My project (5) (2)\\assets\\1. scripts\\enemyscrpits\\firstenemyai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{579D70ED-A936-B8E6-31DC-205F56D5B772}|Assembly-CSharp.csproj|solutionrelative:assets\\1. scripts\\enemyscrpits\\firstenemyai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{579D70ED-A936-B8E6-31DC-205F56D5B772}|Assembly-CSharp.csproj|C:\\Users\\Admin\\Downloads\\My project (5) (2)\\assets\\1. scripts\\playershoot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{579D70ED-A936-B8E6-31DC-205F56D5B772}|Assembly-CSharp.csproj|C:\\d\\Unity3DStudy-main\\My project (5) (2)\\assets\\1. scripts\\playershoot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{579D70ED-A936-B8E6-31DC-205F56D5B772}|Assembly-CSharp.csproj|solutionrelative:assets\\1. scripts\\playershoot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -30,41 +34,52 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EnemyPool.cs",
+              "DocumentMoniker": "C:\\d\\Unity3DStudy-main\\My project (5) (2)\\Assets\\1. Scripts\\EnemyPool.cs",
+              "RelativeDocumentMoniker": "Assets\\1. Scripts\\EnemyPool.cs",
+              "ToolTip": "C:\\d\\Unity3DStudy-main\\My project (5) (2)\\Assets\\1. Scripts\\EnemyPool.cs",
+              "RelativeToolTip": "Assets\\1. Scripts\\EnemyPool.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAAwG4AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T04:30:06.258Z"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Spawner.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\My project (5) (2)\\Assets\\1. Scripts\\Spawner.cs",
+              "DocumentMoniker": "C:\\d\\Unity3DStudy-main\\My project (5) (2)\\Assets\\1. Scripts\\Spawner.cs",
               "RelativeDocumentMoniker": "Assets\\1. Scripts\\Spawner.cs",
-              "ToolTip": "C:\\Users\\Admin\\Downloads\\My project (5) (2)\\Assets\\1. Scripts\\Spawner.cs",
+              "ToolTip": "C:\\d\\Unity3DStudy-main\\My project (5) (2)\\Assets\\1. Scripts\\Spawner.cs",
               "RelativeToolTip": "Assets\\1. Scripts\\Spawner.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-22T04:29:34.089Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "PlayerMove.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\My project (5) (2)\\Assets\\1. Scripts\\PlayerMove.cs",
+              "DocumentMoniker": "C:\\d\\Unity3DStudy-main\\My project (5) (2)\\Assets\\1. Scripts\\PlayerMove.cs",
               "RelativeDocumentMoniker": "Assets\\1. Scripts\\PlayerMove.cs",
-              "ToolTip": "C:\\Users\\Admin\\Downloads\\My project (5) (2)\\Assets\\1. Scripts\\PlayerMove.cs",
+              "ToolTip": "C:\\d\\Unity3DStudy-main\\My project (5) (2)\\Assets\\1. Scripts\\PlayerMove.cs",
               "RelativeToolTip": "Assets\\1. Scripts\\PlayerMove.cs",
               "ViewState": "AgIAACwAAAAAAAAAAAAgwDQAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-22T04:15:59.221Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-22T04:15:59.221Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Grenade.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\My project (5) (2)\\Assets\\1. Scripts\\Grenade.cs",
+              "DocumentMoniker": "C:\\d\\Unity3DStudy-main\\My project (5) (2)\\Assets\\1. Scripts\\Grenade.cs",
               "RelativeDocumentMoniker": "Assets\\1. Scripts\\Grenade.cs",
-              "ToolTip": "C:\\Users\\Admin\\Downloads\\My project (5) (2)\\Assets\\1. Scripts\\Grenade.cs",
+              "ToolTip": "C:\\d\\Unity3DStudy-main\\My project (5) (2)\\Assets\\1. Scripts\\Grenade.cs",
               "RelativeToolTip": "Assets\\1. Scripts\\Grenade.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -72,11 +87,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "FirstEnemyAi.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\My project (5) (2)\\Assets\\1. Scripts\\EnemyScrpits\\FirstEnemyAi.cs",
+              "DocumentMoniker": "C:\\d\\Unity3DStudy-main\\My project (5) (2)\\Assets\\1. Scripts\\EnemyScrpits\\FirstEnemyAi.cs",
               "RelativeDocumentMoniker": "Assets\\1. Scripts\\EnemyScrpits\\FirstEnemyAi.cs",
-              "ToolTip": "C:\\Users\\Admin\\Downloads\\My project (5) (2)\\Assets\\1. Scripts\\EnemyScrpits\\FirstEnemyAi.cs",
+              "ToolTip": "C:\\d\\Unity3DStudy-main\\My project (5) (2)\\Assets\\1. Scripts\\EnemyScrpits\\FirstEnemyAi.cs",
               "RelativeToolTip": "Assets\\1. Scripts\\EnemyScrpits\\FirstEnemyAi.cs",
               "ViewState": "AgIAAGEAAAAAAAAAAAAAAEAAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -84,11 +99,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "PlayerShoot.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\My project (5) (2)\\Assets\\1. Scripts\\PlayerShoot.cs",
+              "DocumentMoniker": "C:\\d\\Unity3DStudy-main\\My project (5) (2)\\Assets\\1. Scripts\\PlayerShoot.cs",
               "RelativeDocumentMoniker": "Assets\\1. Scripts\\PlayerShoot.cs",
-              "ToolTip": "C:\\Users\\Admin\\Downloads\\My project (5) (2)\\Assets\\1. Scripts\\PlayerShoot.cs",
+              "ToolTip": "C:\\d\\Unity3DStudy-main\\My project (5) (2)\\Assets\\1. Scripts\\PlayerShoot.cs",
               "RelativeToolTip": "Assets\\1. Scripts\\PlayerShoot.cs",
               "ViewState": "AgIAAGgAAAAAAAAAAAAjwC0AAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
